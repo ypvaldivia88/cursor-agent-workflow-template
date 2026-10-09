@@ -1,0 +1,10 @@
+---
+description: Do not add repo docs unless requested
+alwaysApply: true
+---
+
+# No docs unless asked
+
+Do not create or expand `docs/` (or project wiki files) unless the user explicitly asks.
+
+Put verification SQL and issue-comment draft text in chat. Exception: filling `.agent-workflow/context/PROJECT.md` when bootstrapping a project is expected once.

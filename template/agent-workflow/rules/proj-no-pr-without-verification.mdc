@@ -1,0 +1,17 @@
+---
+description: No push/PR without runtime verification when repro is possible
+alwaysApply: true
+---
+
+# No PR without verification
+
+Do not `git push`, `gh pr create`, or move a ticket to review until the change is verified when any repro path exists.
+
+1. Trace the runtime path your edit affects.
+2. Reproduce or anchor the symptom.
+3. Verify the fix (local, staging, or tests).
+4. Save evidence under `.agent-workflow/temp/<issue-key>/qa-screenshots/` when UI/runtime changed.
+
+Report environment, steps, and evidence paths in chat before push.
+
+Skip only when repro is genuinely blocked — say why; do not use review status as a placeholder.

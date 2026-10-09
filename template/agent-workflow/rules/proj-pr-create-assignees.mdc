@@ -1,0 +1,14 @@
+---
+description: After gh pr create — assignee, reviewers from project.config.json
+alwaysApply: true
+---
+
+# PR metadata
+
+After `gh pr create`:
+
+1. Assignee: `developerGitHub` from `.agent-workflow/project.config.json`
+2. Reviewers: `pr.defaultReviewers` array
+3. Confirm: `gh pr view <n> --json assignees,reviewRequests,url`
+
+Draft Slack/Teams review ping in chat; post only when user asks.

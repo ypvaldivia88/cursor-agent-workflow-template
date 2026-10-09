@@ -1,0 +1,14 @@
+---
+description: Issue tracker comments — draft in chat, human tone, user confirms before post
+alwaysApply: true
+---
+
+# Issue tracker comments
+
+1. **Draft** in chat (paste-ready).
+2. **Wait for confirmation** before posting via your issue tracker (MCP, API, or UI — however `PROJECT.md` defines).
+3. **Never auto-post** unless the user approved that exact text.
+
+Tone: concise, lead with what changed — not metadata the tracker already shows (PR link, status transitions, branch names).
+
+Screenshots: user uploads in the tracker UI; agent lists local paths under `.agent-workflow/temp/`.

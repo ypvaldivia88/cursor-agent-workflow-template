@@ -1,0 +1,6 @@
+{
+  "name": "agent-workflow-tools",
+  "private": true,
+  "type": "module",
+  "description": "Local agent CLIs under .agent-workflow/tools (memory bank, temp cleanup)."
+}

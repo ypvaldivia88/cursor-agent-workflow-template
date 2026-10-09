@@ -1,0 +1,15 @@
+---
+description: Reusable tools in .agent-workflow/tools — temp is ticket WIP only
+alwaysApply: true
+---
+
+# Tools vs temp
+
+| Path | Allowed |
+|------|---------|
+| `.agent-workflow/tools/` | Reusable CLIs, `package.json`, shared libs |
+| `.agent-workflow/temp/<issue>/` | Tracker attachments, QA screenshots, short-lived evidence |
+
+No `package.json` or mini-apps under `temp/`.
+
+When work is finished: `node .agent-workflow/tools/cli/temp-cleanup.mjs <ISSUE-KEY>`.

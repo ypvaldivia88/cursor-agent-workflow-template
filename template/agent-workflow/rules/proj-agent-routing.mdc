@@ -1,0 +1,32 @@
+---
+description: Agent routing — where to look for workflows, context, and tools
+alwaysApply: true
+---
+
+# Agent routing
+
+**Live issues:** your issue tracker via MCP/API when configured — do not recreate per-ticket files in the repo.
+
+| Need | Where |
+|------|--------|
+| Symptom → skill or doc | `.agent-workflow/context/ROUTING.md` |
+| Project stack and run locally | `.agent-workflow/context/PROJECT.md` |
+| Episodic memory | `node .agent-workflow/tools/cli/memory.mjs bootstrap` · skill `memory-bank` |
+| Ticket WIP / attachments | `.agent-workflow/temp/<issue-key>/` |
+| Credentials | `.agent-workflow/secrets/` — never @-attach in chat |
+| New reusable CLI | `.agent-workflow/tools/` · `proj-tools-layout.mdc` |
+
+## Triggers
+
+| User / situation | Follow |
+|------------------|--------|
+| First message in any chat | `memory.mjs bootstrap` (`proj-memory-bank.mdc`) |
+| Start of workday | skill `session-start` · `proj-daily-day-plan.mdc` |
+| What's next / new work | skill `sprint-pickup` |
+| Pick up ticket | skill `issue-get-context` |
+| Before push / PR | `proj-no-pr-without-verification.mdc` · skill `pr-prepare` |
+| Open PR | skill `pr-create` · `proj-pr-create-assignees.mdc` |
+| Issue comment | `proj-issue-reports.mdc` — draft first, post after user confirms |
+| Ticket done | `temp-cleanup.mjs` · episodic `log` if verified |
+
+Always-on gates: `proj-minimal-changes.mdc`, `proj-no-invention.mdc`, `proj-verify-before-infer.mdc`, `proj-secrets-handling.mdc`, `proj-tools-not-temp.mdc`.

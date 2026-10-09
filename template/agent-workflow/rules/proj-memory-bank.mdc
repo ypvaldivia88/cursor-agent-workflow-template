@@ -1,0 +1,28 @@
+---
+description: Episodic memory — bootstrap every chat, log verified milestones
+alwaysApply: true
+---
+
+# Memory bank
+
+**Skill:** `memory-bank` · **Architecture:** `.agent-workflow/context/memory-bank-architecture.md`
+
+## Every conversation (first turn)
+
+```bash
+node .agent-workflow/tools/cli/memory.mjs bootstrap
+```
+
+Re-run when the active issue changes. Use `--issue` / `--client` when known.
+
+## Log after verified milestones
+
+```bash
+node .agent-workflow/tools/cli/memory.mjs log --issue PROJ-123 --client optional \
+  --symptom "..." --decision "..." --confidence verified --source qa|sql|code|pr \
+  --sources "path|reference"
+```
+
+One event per milestone. `hypothesis` → `--expires` (+7d). No secrets or PII.
+
+Before `log`, `memory.mjs query --issue PROJ-123` to skip duplicates.

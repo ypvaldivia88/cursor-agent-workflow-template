@@ -1,6 +1,0 @@
-{
-  "name": "cursor-workflow-tools",
-  "private": true,
-  "type": "module",
-  "description": "Local agent CLIs under .cursor/tools (memory bank, temp cleanup)."
-}

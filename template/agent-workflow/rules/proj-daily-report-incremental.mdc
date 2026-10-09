@@ -1,0 +1,14 @@
+---
+description: Update daily report markdown when a milestone finishes
+alwaysApply: true
+---
+
+# Daily report — incremental
+
+File: `.agent-workflow/reports/` using `dailyReport.filePattern` from `project.config.json`.
+
+When a ticket milestone completes (QA verified, PR merged, deliverable shipped), append a task block with real `(H:MM hrs)` in the same session.
+
+Read existing file first; merge; do not drop meeting blocks.
+
+Log episodic memory when the outcome is verified (`proj-memory-bank.mdc`).
