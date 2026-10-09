@@ -1,0 +1,34 @@
+{
+  "$comment": "Copy to <repo>/.cursor/project.config.json when applying the template. Edit values for your project.",
+  "projectName": "MyProject",
+  "developerName": "Your Name",
+  "developerGitHub": "your-github-handle",
+  "issueKeyPrefixes": ["PROJ"],
+  "defaultBaseBranch": "main",
+  "releaseBranchPattern": "release-*",
+  "dailyReport": {
+    "filePattern": "Developer_Report_YYYY-MM-DD.md",
+    "authorLabel": "Developer",
+    "targetHoursPerDay": 6
+  },
+  "sessionStart": {
+    "chatTitleDateOnly": true,
+    "mailTriage": false,
+    "slackTriage": false,
+    "dayWatch": false
+  },
+  "pr": {
+    "defaultReviewers": ["teammate-a", "teammate-b"],
+    "squashMerge": true
+  },
+  "integrations": {
+    "jiraSite": "yourorg.atlassian.net",
+    "atlassianMcp": true,
+    "githubCli": true
+  },
+  "paths": {
+    "codingStandards": "docs/coding-standards/",
+    "features": "docs/features/",
+    "ciReadme": ".github/README.md"
+  }
+}

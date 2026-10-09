@@ -1,0 +1,14 @@
+---
+description: Verify data-dependent assumptions before coding
+alwaysApply: true
+---
+
+# Verify before you infer
+
+For bugs that depend on DB or environment state:
+
+1. State the hypothesis.
+2. Provide read-only checks (SQL `SELECT`, logs, API) — run yourself when credentials exist.
+3. Implement only after results match.
+
+Skip only for pure logic bugs or when the user already pasted proof.

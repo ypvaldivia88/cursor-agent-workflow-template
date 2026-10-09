@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Episodic memory event",
+  "type": "object",
+  "required": ["id", "timestamp", "symptom", "decision", "confidence", "source", "sources"],
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "issueKey": { "type": ["string", "null"], "pattern": "^[A-Z]+-\\d+$" },
+    "client": { "type": ["string", "null"] },
+    "symptom": { "type": "string", "minLength": 1 },
+    "evidence": { "type": ["string", "null"] },
+    "decision": { "type": "string", "minLength": 1 },
+    "confidence": { "enum": ["fact", "hypothesis", "verified"] },
+    "source": { "enum": ["jira", "sql", "qa", "code", "pr", "confluence", "mcp", "other"] },
+    "sources": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "expiresAt": { "type": ["string", "null"], "format": "date-time" },
+    "relatedEntities": { "type": "array", "items": { "type": "string" } }
+  }
+}

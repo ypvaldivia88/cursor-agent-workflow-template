@@ -1,0 +1,15 @@
+---
+description: Reusable tools in .cursor/tools — temp is ticket WIP only
+alwaysApply: true
+---
+
+# Tools vs temp
+
+| Path | Allowed |
+|------|---------|
+| `.cursor/tools/` | Reusable CLIs, `package.json`, shared libs |
+| `.cursor/temp/<issue>/` | Jira attachments, QA screenshots, short-lived evidence |
+
+No `package.json` or mini-apps under `temp/`.
+
+When ticket is Done (Jira status category done): `node .cursor/tools/cli/temp-cleanup.mjs`.

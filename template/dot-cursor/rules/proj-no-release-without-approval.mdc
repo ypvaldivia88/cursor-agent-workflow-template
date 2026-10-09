@@ -1,0 +1,10 @@
+---
+description: Release/hotfix branches need explicit user OK
+alwaysApply: true
+---
+
+# No release without approval
+
+Do not cherry-pick to `release-*`, open PRs to release branches, or merge them unless the user names the branch in the current thread.
+
+Default: one PR to `defaultBaseBranch` from `project.config.json`.

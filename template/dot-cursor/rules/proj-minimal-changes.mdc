@@ -1,0 +1,12 @@
+---
+description: Surgical diffs only — no drive-by refactors
+alwaysApply: true
+---
+
+# Minimal changes
+
+Fix at the narrowest point. Preserve control flow, naming, and patterns in the file you touch.
+
+Do not add new abstractions, test projects, or docs unless the user asks. Match surrounding style.
+
+Pair with `proj-verify-before-infer.mdc` before data-dependent fixes.

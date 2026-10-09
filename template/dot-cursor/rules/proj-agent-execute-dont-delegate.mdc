@@ -1,0 +1,22 @@
+---
+description: Run checks locally before asking the user
+alwaysApply: true
+---
+
+# Execute locally
+
+Do the step yourself when the environment allows it. Hand off only when the action needs the user's UI, secrets you cannot use, or an explicit product decision.
+
+## Run yourself
+
+- `git status`, `git log`, `git diff`, branch sync with `defaultBaseBranch` from `project.config.json`
+- Issue/PR state via `gh` or GitHub MCP
+- Jira via Atlassian MCP
+- `node .cursor/tools/cli/memory.mjs bootstrap` on first turn
+- Read project docs under paths in `project.config.json` (`paths.codingStandards`, etc.)
+
+## Ask first
+
+- Commits, push, PR create, Jira post, release branches
+- Destructive git or production deploys
+- Scope expansion beyond the ticket

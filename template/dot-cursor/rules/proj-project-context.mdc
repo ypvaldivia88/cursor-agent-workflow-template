@@ -1,0 +1,12 @@
+---
+description: Fill PROJECT.md for this repo — stack, run, CI
+alwaysApply: true
+---
+
+# Project context
+
+**Routing:** `.cursor/context/ROUTING.md`
+
+**You must maintain:** `.cursor/context/PROJECT.md` — languages, main apps, how to build/run/test, default branch, issue tracker, where coding standards live (`project.config.json` → `paths`).
+
+Agents read `PROJECT.md` before suggesting architecture or QA paths.

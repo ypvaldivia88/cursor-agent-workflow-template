@@ -1,0 +1,15 @@
+---
+description: Session start day plan — user approves before deep work
+alwaysApply: false
+---
+
+# Day plan
+
+On session start (`session-start` skill), after bootstrap:
+
+1. Jira/query assignee open work
+2. Open PRs (`gh pr list`)
+3. Produce calendar + work blocks with hour budget (`dailyReport.targetHoursPerDay` in config)
+4. **Do not start implementation** until the user confirms the plan or picks a block
+
+Tickets waiting only on external feedback get one line under **Waiting on feedback** — no planned hours.
