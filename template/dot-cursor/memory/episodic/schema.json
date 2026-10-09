@@ -12,7 +12,7 @@
     "evidence": { "type": ["string", "null"] },
     "decision": { "type": "string", "minLength": 1 },
     "confidence": { "enum": ["fact", "hypothesis", "verified"] },
-    "source": { "enum": ["jira", "sql", "qa", "code", "pr", "confluence", "mcp", "other"] },
+    "source": { "enum": ["issue_tracker", "sql", "qa", "code", "pr", "docs", "mcp", "other"] },
     "sources": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
     "tags": { "type": "array", "items": { "type": "string" } },
     "expiresAt": { "type": ["string", "null"], "format": "date-time" },

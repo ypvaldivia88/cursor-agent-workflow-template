@@ -10,7 +10,7 @@
 ## Retrieval order
 
 1. Rules
-2. Live issue (Jira MCP) + `.cursor/temp/<key>/`
+2. Live issue (tracker MCP/API) + `.cursor/temp/<key>/`
 3. `memory.mjs bootstrap` / `context --issue`
 4. Context docs
 5. MCP graph if enabled

@@ -7,4 +7,4 @@ alwaysApply: true
 
 Do not create or expand `docs/` (or project wiki files) unless the user explicitly asks.
 
-Put verification SQL and Jira draft text in chat. Exception: filling `.cursor/context/PROJECT.md` when bootstrapping a project is expected once.
+Put verification SQL and issue-comment draft text in chat. Exception: filling `.cursor/context/PROJECT.md` when bootstrapping a project is expected once.

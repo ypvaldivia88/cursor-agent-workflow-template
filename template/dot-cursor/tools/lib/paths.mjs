@@ -11,7 +11,7 @@ const here = dirname(fileURLToPath(import.meta.url));
 /** `.cursor/tools` */
 export const TOOLS_DIR = resolve(here, "..");
 
-/** Repo root (Incent) */
+/** Repository root (parent of `.cursor`) */
 export const REPO = resolve(TOOLS_DIR, "..", "..");
 
 /** Watcher JSON + logs (not source) */

@@ -3,7 +3,7 @@
  */
 
 export const CONFIDENCE = ["fact", "hypothesis", "verified"];
-export const SOURCES = ["jira", "sql", "qa", "code", "pr", "confluence", "mcp", "other"];
+export const SOURCES = ["issue_tracker", "sql", "qa", "code", "pr", "docs", "mcp", "other"];
 
 /**
  * @param {Record<string, unknown>} input

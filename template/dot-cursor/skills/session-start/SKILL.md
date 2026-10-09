@@ -17,12 +17,12 @@ Create or update today's file under `.cursor/reports/` per `project.config.json`
 
 ## 3. Work queue
 
-- Jira: assignee = current user, open statuses
-- `gh pr list --author <developerGitHub>`
+- Open issues assigned to you (per `PROJECT.md`)
+- Open PRs for your SCM (`gh pr list` or equivalent)
 - Note blockers waiting on external feedback only (no planned hours)
 
 ## 4. Day plan
 
 Follow `proj-daily-day-plan.mdc` — present plan; wait for user approval before ticket work.
 
-Optional integrations (enable in `project.config.json` → `sessionStart`): mail, Slack, calendar, day-watch — add tools from a mature `.cursor` when needed.
+Optional digests: configure `sessionStart.optionalDigests` in `project.config.json` and add matching tools under `.cursor/tools/`.

@@ -10,13 +10,13 @@ Do the step yourself when the environment allows it. Hand off only when the acti
 ## Run yourself
 
 - `git status`, `git log`, `git diff`, branch sync with `defaultBaseBranch` from `project.config.json`
-- Issue/PR state via `gh` or GitHub MCP
-- Jira via Atlassian MCP
+- Issue/PR state via your SCM CLI or MCP (`gh`, `glab`, etc. per `PROJECT.md`)
+- Issue details via tracker MCP/API documented in `PROJECT.md`
 - `node .cursor/tools/cli/memory.mjs bootstrap` on first turn
 - Read project docs under paths in `project.config.json` (`paths.codingStandards`, etc.)
 
 ## Ask first
 
-- Commits, push, PR create, Jira post, release branches
+- Commits, push, PR create, issue tracker posts, release branches
 - Destructive git or production deploys
 - Scope expansion beyond the ticket

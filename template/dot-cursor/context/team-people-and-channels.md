@@ -1,7 +1,7 @@
 # Team and channels
 
-| Name | Role | GitHub | Jira @ | Slack |
-|------|------|--------|--------|-------|
+| Name | Role | SCM handle | Tracker @ | Chat |
+|------|------|------------|-----------|------|
 | _(fill in)_ | | | | |
 
-Update when someone new appears in tickets or PRs.
+Update when someone new appears in issues or PRs.

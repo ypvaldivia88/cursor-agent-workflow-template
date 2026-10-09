@@ -1,9 +1,10 @@
 # secrets/ (gitignored via repo .gitignore)
 
-| File | Variables |
-|------|-----------|
-| `integrations/jira.env` | `ATLASSIAN_EMAIL`, `ATLASSIAN_API_TOKEN`, `JIRA_SITE` |
+Store **local-only** credentials for CLIs and MCP helpers. Never commit this folder.
 
-Create `jira.env` for `jira-attachments.mjs` / `temp-cleanup.mjs` when you add those tools.
+| Pattern | Use |
+|---------|-----|
+| `integrations/*.env` | API tokens for optional tools you add (issue tracker, SCM, chat) |
+| `local/` | Environment-specific overrides (e.g. `.current-profile` for active deployment target) |
 
-Never commit this folder.
+The base template ships **no** required secret files — only add what your extended tooling needs.

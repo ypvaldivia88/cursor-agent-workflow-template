@@ -7,8 +7,8 @@ alwaysApply: false
 
 On session start (`session-start` skill), after bootstrap:
 
-1. Jira/query assignee open work
-2. Open PRs (`gh pr list`)
+1. Open issues assigned to you (tracker query per `PROJECT.md`)
+2. Open PRs (`gh pr list` or equivalent)
 3. Produce calendar + work blocks with hour budget (`dailyReport.targetHoursPerDay` in config)
 4. **Do not start implementation** until the user confirms the plan or picks a block
 

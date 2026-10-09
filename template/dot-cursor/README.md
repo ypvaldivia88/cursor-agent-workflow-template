@@ -15,3 +15,5 @@ Copied by `cursor-agent-workflow-template/scripts/Apply-CursorWorkflow.ps1`.
 | `memory/` | Episodic JSONL + optional playbooks |
 
 Back up `secrets/` and `reports/` with the rest of your machine backup.
+
+Copy `mcp.json.example` to `mcp.json` and add MCP server entries from your provider's Cursor documentation.

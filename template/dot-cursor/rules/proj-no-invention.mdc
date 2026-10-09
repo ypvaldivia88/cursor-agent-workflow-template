@@ -5,8 +5,8 @@ alwaysApply: true
 
 # Never invent
 
-Do not guess API behavior, config values, DB contents, or teammate intent and then ship code, Jira text, or PRs from that guess.
+Do not guess API behavior, config values, DB contents, or teammate intent and then ship code, issue comments, or PRs from that guess.
 
 **Proof:** code on the failing path, runtime/QA, read-only queries, ticket text, or explicit user confirmation.
 
-If unknown, stop, investigate, or ask. Mark uncertainty in chat — not in Jira as fact.
+If unknown, stop, investigate, or ask. Mark uncertainty in chat — not in the tracker as fact.

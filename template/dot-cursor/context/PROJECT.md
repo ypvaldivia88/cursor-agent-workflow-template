@@ -5,7 +5,8 @@
 ## Summary
 
 - **Product:** _(one line)_
-- **Issue tracker:** Jira project `PROJ` (see `project.config.json` → `issueKeyPrefixes`)
+- **Issue tracker:** _(e.g. Linear, GitHub Issues, Azure Boards — and how agents read/update it)_
+- **Issue key format:** prefixes in `project.config.json` → `issueKeyPrefixes`
 - **Default branch:** _(from project.config.json)_
 
 ## Repository layout
@@ -27,8 +28,18 @@
 
 ## CI/CD
 
-- _(link `.github/README.md` or pipeline doc)_
+- _(link `paths.ciReadme` in project.config.json)_
 
 ## Coding standards
 
 - _(path from project.config.json → paths.codingStandards)_
+
+## Agent integrations
+
+Document optional MCP server ids or CLIs:
+
+| Need | How |
+|------|-----|
+| Issues | _MCP name / API / manual_ |
+| SCM | _e.g. `gh`, GitLab CLI_ |
+| Chat | _optional_ |

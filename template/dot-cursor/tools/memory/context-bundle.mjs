@@ -61,7 +61,7 @@ export function buildContextBundle(opts = {}) {
   lines.push("");
   lines.push("## Retrieval order (mandatory)");
   lines.push("1. `.cursor/rules/` — behavior gates");
-  lines.push("2. Ticket context — Jira MCP + `.cursor/temp/<key>/`");
+  lines.push("2. Ticket context — issue tracker (MCP/API per PROJECT.md) + `.cursor/temp/<key>/`");
   lines.push("3. Episodic memory — recent decisions below");
   lines.push("4. Playbooks — compacted patterns below");
   lines.push("5. `.cursor/context/` — stable reference docs");

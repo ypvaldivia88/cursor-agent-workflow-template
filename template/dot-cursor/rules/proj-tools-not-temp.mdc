@@ -8,8 +8,8 @@ alwaysApply: true
 | Path | Allowed |
 |------|---------|
 | `.cursor/tools/` | Reusable CLIs, `package.json`, shared libs |
-| `.cursor/temp/<issue>/` | Jira attachments, QA screenshots, short-lived evidence |
+| `.cursor/temp/<issue>/` | Tracker attachments, QA screenshots, short-lived evidence |
 
 No `package.json` or mini-apps under `temp/`.
 
-When ticket is Done (Jira status category done): `node .cursor/tools/cli/temp-cleanup.mjs`.
+When work is finished: `node .cursor/tools/cli/temp-cleanup.mjs <ISSUE-KEY>`.

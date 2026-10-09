@@ -1,11 +1,14 @@
 {
-  "$comment": "Copy to <repo>/.cursor/project.config.json when applying the template. Edit values for your project.",
   "projectName": "MyProject",
   "developerName": "Your Name",
   "developerGitHub": "your-github-handle",
   "issueKeyPrefixes": ["PROJ"],
   "defaultBaseBranch": "main",
   "releaseBranchPattern": "release-*",
+  "issueTracker": {
+    "product": "generic",
+    "notes": "Document in PROJECT.md: MCP server id, API, or how agents load issues."
+  },
   "dailyReport": {
     "filePattern": "Developer_Report_YYYY-MM-DD.md",
     "authorLabel": "Developer",
@@ -13,18 +16,16 @@
   },
   "sessionStart": {
     "chatTitleDateOnly": true,
-    "mailTriage": false,
-    "slackTriage": false,
-    "dayWatch": false
+    "optionalDigests": []
   },
   "pr": {
     "defaultReviewers": ["teammate-a", "teammate-b"],
     "squashMerge": true
   },
   "integrations": {
-    "jiraSite": "yourorg.atlassian.net",
-    "atlassianMcp": true,
-    "githubCli": true
+    "scm": "github",
+    "issueTrackerMcp": null,
+    "chatMcp": null
   },
   "paths": {
     "codingStandards": "docs/coding-standards/",
